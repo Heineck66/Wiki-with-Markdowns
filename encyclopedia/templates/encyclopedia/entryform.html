@@ -1,0 +1,23 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Create Page
+{% endblock %}
+
+{% block body %}
+<div class="centered">
+    <h1>{{header}}</h1>
+    <hr>
+    {% if code == 'create' %}
+    <form action="{% url 'create' %}" method="POST" id="createform">
+    {% elif code == 'edit' %}
+    <form action="{% url 'save' %}" method="POST" id="createform">
+    {% endif %}
+        {% csrf_token %}
+        Title: <input type="text" name="title" value="{{title}}">
+        <input class="btn btn-primary" type="submit" value="Save">
+    </form>
+    <hr>
+    <textarea class="contform" name="content" form="createform" placeholder="Enter text here...">{{content}}</textarea>
+</div>
+{% endblock %}

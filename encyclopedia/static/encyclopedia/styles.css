@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    background-color: #292D3E;
+    overflow: hidden;
+}
+
+code {
+    white-space: pre;
+}
+
+h1 {
+    margin-top: 0px;
+    padding-top: 20px;
+}
+
+textarea {
+    height: 90vh;
+    width: 80%;
+}
+
+.main {
+    padding: 20px;
+    color: #B2CCD6;
+    overflow: hidden;
+}
+
+.search {
+    width: 100%;
+    font-size: 15px;
+    line-height: 15px;
+    background-color: #292D3E;
+    color: cornsilk;
+    border-radius: 3px;
+}
+
+.sidebar {
+    background-color: #1B1E2B;
+    height: 100vh;
+    padding: 40px;
+    color: #C4F1FF;
+}
+
+.sidebar a {
+    color: cornflowerblue;
+}
+
+.sidebar div {
+    border-left: aliceblue solid 1px;
+    padding-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sidebar div:hover  {
+    background-color: aliceblue;
+    border-radius: 2px;
+    color: black;
+} 
+
+.sidebar div:hover > a {
+    color: #1B1E2B;
+    font-weight: 500;
+}
+
+
+.contform {
+    overflow-y: scroll;
+    height: 80%;
+    min-height: 70vh;
+    width: 90%;
+    resize: none;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+.centered {
+    text-align: center;
+}
+
+.listing, .entry {
+    margin: 20px;
+    padding-left: 4%;
+    padding-bottom: 40px;
+    padding-right: 4%;
+    width: 95%;
+    color: gainsboro;
+    min-height: 80vh;
+    max-height: 85vh
+}
+
+.entry {
+    overflow-y:scroll;
+    background-color: #424864;
+    border-radius: 2px;
+    padding-top: 40px;
+}
+
+.listing h1, .entry h1 {
+    font-size: 50px;
+    color: ghostwhite;
+}
+
+.btn {
+    margin-left: 20px;
+}
+
+.quote {
+    background-color: #5B638A;
+    border-left: floralwhite solid 5px;
+    padding-left: 5px;
+    border-radius: 2px;
+    padding: 10px;
+}
+
+.codequote {
+    background-color: #5B638A;
+    border-radius: 3px;
+    padding: 25px;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#container div {
+    background-color: #7B86C3;
+    color: #1B1E2B;
+    margin: 20px;
+    padding: 20px;
+    width: 250px;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#container div:hover {
+    background-color: #a8b3f0;
+}
+
+#container div:hover > a {
+    color: #07080A;
+}
+
+#container a {
+    color: #272E49;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: none;
+}
